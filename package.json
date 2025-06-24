@@ -3,13 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "description": "Footer that gives link to Great Frontend profile",
-  "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "next:dev": "next dev",
+    "next:build": "next build",
+    "next:start": "next start",
+    "next:lint": "next lint",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -22,6 +26,10 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "next": "15.3.4"
+  },
+  "peerDependencies": {
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0"
   },
   "devDependencies": {
     "typescript": "^5",
@@ -38,5 +46,12 @@
   "license": "ISC",
   "publishConfig": {
     "@kevnien:registry": "https://npm.pkg.github.com"
+  },
+  "main": "./dist/exports.js",
+  "files": [
+    "./dist"
+  ],
+  "exports": {
+    ".": "./dist/exports.js"
   }
 }
