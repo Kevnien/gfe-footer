@@ -2,12 +2,22 @@
   "name": "gfe-footer",
   "version": "0.1.0",
   "private": true,
+  "description": "Footer that gives link to Great Frontend profile",
+  "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "github.com/kevnien/gfe-footer"
+  },
+  "keywords": [
+    "gfe"
+  ],
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -23,5 +33,10 @@
     "eslint": "^9",
     "eslint-config-next": "15.3.4",
     "@eslint/eslintrc": "^3"
+  },
+  "author": "Kevin Nguyen",
+  "license": "ISC",
+  "publishConfig": {
+    "@kevnien:registry": "https://npm.pkg.github.com"
   }
 }
