@@ -13,6 +13,11 @@ var __createBinding = (this && this.__createBinding) || (Object.create ? (functi
 var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.KevinGfeFooter = void 0;
 __exportStar(require("./gfe-footer"), exports);
-__exportStar(require("./kevin-gfe-footer"), exports);
+var kevin_gfe_footer_1 = require("./kevin-gfe-footer");
+Object.defineProperty(exports, "KevinGfeFooter", { enumerable: true, get: function () { return __importDefault(kevin_gfe_footer_1).default; } });
