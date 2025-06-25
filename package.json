@@ -1,7 +1,6 @@
 {
   "name": "gfe-footer",
   "version": "0.1.0",
-  "private": true,
   "description": "Footer that gives link to Great Frontend profile",
   "scripts": {
     "dev": "next dev",
